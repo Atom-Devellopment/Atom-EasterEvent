@@ -1,0 +1,67 @@
+#####################################################################
+#                                                                   #
+#      ______          _              ______               _        #
+#     |  ____|        | |            |  ____|             | |       #
+#     | |__   __ _ ___| |_ ___ _ __  | |____   _____ _ __ | |_      #
+#     |  __| / _` / __| __/ _ \ '__| |  __\ \ / / _ \ '_ \| __|     #
+#     | |___| (_| \__ \ ||  __/ |    | |___\ V /  __/ | | | |_      #
+#     |______\__,_|___/\__\___|_|    |______\_/ \___|_| |_|\__|     #
+#                                                                   #
+#                                                                   #
+#####################################################################
+
+############################# GENERAL SETTIGS ##############################
+COMMAND_PERMISSION: "paques.admin"
+
+NO_PERMISSION: "&cVous n'avez pas la permission !" #this message has no default prefix
+
+TASK_TIMER_BEFORE_START: 300 #time in seconds
+
+MESSAGE_PREFIX: "&7[&dPaques&lEvent&7]"
+PLAYER_RECOVER_EGG_MESSAGE: "&eVous venez de récupérer un &d&lOeuf de paques &ede rareté %rarity%"
+
+####### ADMIN MESSAGE #######
+EVENT_HAS_ALREADY_LAUNCH: "&cL'event est déjà en cours !" 
+CONFIG_RELOADED: "&aVous venez de reload la config" 
+EVENT_IS_ALREADY_STOP: "&cL'event est déjà arrêté !" 
+EGG_HAS_ALREADY_PLACED_AT_LOCATION: "&cUn oeuf est déjà placer à cette endroit !" 
+EGG_PLACED: "&cVous venez de placer un &dOeuf&ade rareté &6%rarity% &aà la position!7: &eX&7: &6%posX%&7, &eY&7: &6%posY%&7, &eZ&7: &6%posZ%" 
+
+####### BROADCAST MESSAGE #######
+TASK_MESSAGE_BEFORE_START: #time in seconds
+  300: ""
+  120: ""
+  60: ""
+  30: ""
+  10: ""
+  5: ""
+  3: ""
+  2: ""
+  1: ""
+
+EGG_EVENT_START: #this message has no default prefix
+  - ""
+  - "&7[&d&lPaques&7] &eLa chasse au &5Oeufs &eest &alancée !"
+  - ""
+EGG_EVENT_STOP: #this message has no default prefix
+  - ""
+  - "&7[&d&lPaques&7] &eLa chasse au &5Oeufs &eest &cterminée !"
+  - ""
+############################ SCOREBOARD SETTIGS ############################
+
+SCOREBOARD_TITLE: "&5❁ &d&lPaques &dEvent &5❁"
+SCOREBOARD_LINES:
+  - ""
+  - "&d&m----------------------------"
+  - ""
+  - "&5Oeufs&7: &e%current-egg%&7/&6%max-egg% "
+  - ""
+  - "&6&lplay.monsuperserv.fr"
+  - "&d&m----------------------------"
+
+########################### EGG & LOOTS SETTINGS ###########################
+
+EGG_RARITY_TEXTURE:
+  COMMON: "b154ba42d2822f56534e755827892e4719deef328abb59584be6967f25f48cb4"
+  EPIC: "fd6b606ee35552b223f137639915c9625335aa4b9d09d6c0c17bb75d2db4f09"
+  LEGENDARY: "eceddc23f9d96baaa0d2d7b9ec180cd7bea5447d39c425ca9e44d8808ea11ea0"
